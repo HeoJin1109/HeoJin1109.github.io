@@ -9,10 +9,12 @@
 b:I[97367,["https://HeoJin1109.github.io/_next/static/chunks/ff1a16fafef87110.js","https://HeoJin1109.github.io/_next/static/chunks/d2be314c3ece3fbe.js"],"ViewportBoundary"]
 d:I[97367,["https://HeoJin1109.github.io/_next/static/chunks/ff1a16fafef87110.js","https://HeoJin1109.github.io/_next/static/chunks/d2be314c3ece3fbe.js"],"MetadataBoundary"]
 f:I[68027,[],"default"]
-:HL["https://HeoJin1109.github.io/_next/static/chunks/b28f136187491fad.css","style"]
-0:{"P":null,"b":"8o8KrM_ZYzbLLIbpSYjIO","c":["","posts","tech","tailwind-tips",""],"q":"","i":false,"f":[[["",{"children":["posts",{"children":[["slug","tech/tailwind-tips","c"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"https://HeoJin1109.github.io/_next/static/chunks/b28f136187491fad.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"https://HeoJin1109.github.io/_next/static/chunks/5976baac5b2e17d2.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"ko","suppressHydrationWarning":true,"children":["$","body",null,{"className":"font-sans","suppressHydrationWarning":true,"children":["$","$L2",null,{"attribute":"class","defaultTheme":"system","enableSystem":true,"disableTransitionOnChange":true,"children":[["$","div",null,{"className":"flex flex-col min-h-screen","children":[["$","header",null,{"className":"w-full max-w-3xl mx-auto px-6 py-12 flex justify-between items-center","children":[["$","a",null,{"href":"/","className":"text-xl font-bold tracking-tight hover:opacity-70 transition-opacity","children":"허진 블로그"}],["$","nav",null,{"className":"flex space-x-6","children":[["$","a",null,{"href":"/","className":"text-sm font-medium text-muted hover:text-heading transition-colors","children":"Home"}],["$","a",null,{"href":"/category","className":"text-sm font-medium text-muted hover:text-heading transition-colors","children":"Category"}],["$","a",null,{"href":"/about","className":"text-sm font-medium text-muted hover:text-heading transition-colors","children":"About"}]]}]]}],["$","main",null,{"className":"flex-grow w-full","children":["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"w-full max-w-3xl mx-auto px-6 py-16 mt-20 border-t border-[var(--border)]","children":["$","div",null,{"className":"flex flex-col md:flex-row justify-between items-center gap-4","children":[["$","p",null,{"className":"text-sm text-muted-foreground","children":"© 2026"}],["$","p",null,{"className":"text-xs text-muted-foreground uppercase tracking-widest","children":"Powered by Next.js"}]]}]}]]}],["$","$L5",null,{}],["$","$L6",null,{}]]}]}]}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":["$L7",[["$","script","script-0",{"src":"https://HeoJin1109.github.io/_next/static/chunks/7c92e96509cd355e.js","async":true,"nonce":"$undefined"}]],["$","$L8",null,{"children":["$","$9",null,{"name":"Next.MetadataOutlet","children":"$@a"}]}]]}],{},null,false,false]},null,false,false]},null,false,false]},null,false,false],["$","$1","h",{"children":[null,["$","$Lb",null,{"children":"$Lc"}],["$","div",null,{"hidden":true,"children":["$","$Ld",null,{"children":["$","$9",null,{"name":"Next.Metadata","children":"$Le"}]}]}],null]}],false]],"m":"$undefined","G":["$f",[]],"S":true}
+:HL["https://HeoJin1109.github.io/_next/static/chunks/e9a6e7e5a03af9be.css","style"]
+:HC["https://heojin1109.github.io",""]
+:HL["https://hangeul.pstatic.net/hangeul_static/css/nanum-square-round.css","style"]
+0:{"P":null,"b":"bCrnGc_srkKYnbHHedJzg","c":["","posts","tech","tailwind-tips",""],"q":"","i":false,"f":[[["",{"children":["posts",{"children":[["slug","tech/tailwind-tips","c"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"https://HeoJin1109.github.io/_next/static/chunks/e9a6e7e5a03af9be.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"https://HeoJin1109.github.io/_next/static/chunks/5976baac5b2e17d2.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"ko","suppressHydrationWarning":true,"children":[["$","head",null,{"children":["$","link",null,{"href":"https://hangeul.pstatic.net/hangeul_static/css/nanum-square-round.css","rel":"stylesheet"}]}],["$","body",null,{"className":"font-sans","suppressHydrationWarning":true,"children":["$","$L2",null,{"attribute":"class","defaultTheme":"system","enableSystem":true,"disableTransitionOnChange":true,"children":[["$","div",null,{"className":"flex flex-col min-h-screen","children":[["$","header",null,{"className":"w-full max-w-3xl mx-auto px-6 py-12 flex justify-between items-center","children":[["$","a",null,{"href":"/","className":"text-xl font-bold tracking-tight hover:opacity-70 transition-opacity","children":"허진 블로그"}],["$","nav",null,{"className":"flex space-x-6","children":[["$","a",null,{"href":"/","className":"text-sm font-medium text-muted hover:text-heading transition-colors","children":"Home"}],["$","a",null,{"href":"/category","className":"text-sm font-medium text-muted hover:text-heading transition-colors","children":"Category"}],["$","a",null,{"href":"/about","className":"text-sm font-medium text-muted hover:text-heading transition-colors","children":"About"}]]}]]}],["$","main",null,{"className":"flex-grow w-full","children":["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"w-full max-w-3xl mx-auto px-6 py-16 mt-20 border-t border-[var(--border)]","children":["$","div",null,{"className":"flex flex-col md:flex-row justify-between items-center gap-4","children":[["$","p",null,{"className":"text-sm text-muted-foreground","children":"© 2026"}],["$","p",null,{"className":"text-xs text-muted-foreground uppercase tracking-widest","children":"Powered by Next.js"}]]}]}]]}],["$","$L5",null,{}],["$","$L6",null,{}]]}]}]]}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":["$L7",[["$","script","script-0",{"src":"https://HeoJin1109.github.io/_next/static/chunks/7c92e96509cd355e.js","async":true,"nonce":"$undefined"}]],["$","$L8",null,{"children":["$","$9",null,{"name":"Next.MetadataOutlet","children":"$@a"}]}]]}],{},null,false,false]},null,false,false]},null,false,false]},null,false,false],["$","$1","h",{"children":[null,["$","$Lb",null,{"children":"$Lc"}],["$","div",null,{"hidden":true,"children":["$","$Ld",null,{"children":["$","$9",null,{"name":"Next.Metadata","children":"$Le"}]}]}],null]}],false]],"m":"$undefined","G":["$f",[]],"S":true}
 10:I[22016,["https://HeoJin1109.github.io/_next/static/chunks/5976baac5b2e17d2.js","https://HeoJin1109.github.io/_next/static/chunks/7c92e96509cd355e.js"],""]
-11:Tde5,<h1 id="tailwind-css-활용법-가이드">Tailwind CSS 활용법 가이드</h1>
+11:T1853,<h1 id="tailwind-css-활용법-가이드">Tailwind CSS 활용법 가이드</h1>
 <p>Tailwind CSS는 <strong>Utility-First</strong> 철학을 바탕으로 빠르게 UI를 구축할 수 있게 도와줍니다. 이 포스트에서는 실무에서 유용하게 사용할 수 있는 기법들을 정리합니다.</p>
 <hr>
 <h2 id="1-주요-특징-및-장점">1. 주요 특징 및 장점</h2>
@@ -28,58 +30,83 @@ f:I[68027,[],"default"]
 <h2 id="2-코드-예제-react--typescript">2. 코드 예제 (React + TypeScript)</h2>
 <h3 id="컴포넌트-스타일링">컴포넌트 스타일링</h3>
 <p>반응형 디자인과 Hover 효과를 적용한 간단한 버튼 예제입니다.</p>
-<pre><code class="language-tsx">import React from 'react';
+<pre><code class="hljs language-tsx"><span class="hljs-keyword">import</span> <span class="hljs-title class_">React</span> <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>;
 
-interface ButtonProps {
-  label: string;
-  primary?: boolean;
+<span class="hljs-keyword">interface</span> <span class="hljs-title class_">ButtonProps</span> {
+  <span class="hljs-attr">label</span>: <span class="hljs-built_in">string</span>;
+  <span class="hljs-attr">primary</span>?: <span class="hljs-built_in">boolean</span>;
 }
 
-export const CustomButton = ({ label, primary }: ButtonProps) => {
-  return (
-    &#x3C;button className={`
-      px-6 py-2 rounded-lg font-medium transition-colors duration-200
-      ${primary 
-        ? 'bg-blue-600 text-white hover:bg-blue-700 active:bg-blue-800' 
-        : 'bg-gray-100 text-gray-800 hover:bg-gray-200'}
-    `}>
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> <span class="hljs-title function_">CustomButton</span> = (<span class="hljs-params">{ label, primary }: <span class="hljs-title class_">ButtonProps</span></span>) => {
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">button</span> <span class="hljs-attr">className</span>=<span class="hljs-string">{</span>`
+      <span class="hljs-attr">px-6</span> <span class="hljs-attr">py-2</span> <span class="hljs-attr">rounded-lg</span> <span class="hljs-attr">font-medium</span> <span class="hljs-attr">transition-colors</span> <span class="hljs-attr">duration-200</span>
+      ${<span class="hljs-attr">primary</span> 
+        ? '<span class="hljs-attr">bg-blue-600</span> <span class="hljs-attr">text-white</span> <span class="hljs-attr">hover:bg-blue-700</span> <span class="hljs-attr">active:bg-blue-800</span>' 
+        <span class="hljs-attr">:</span> '<span class="hljs-attr">bg-gray-100</span> <span class="hljs-attr">text-gray-800</span> <span class="hljs-attr">hover:bg-gray-200</span>'}
+    `}></span>
       {label}
-    &#x3C;/button>
+    <span class="hljs-tag">&#x3C;/<span class="hljs-name">button</span>></span></span>
   );
 };
 </code></pre>
 <h3 id="테마-커스텀-tailwindconfigts">테마 커스텀 (tailwind.config.ts)</h3>
 <p>프로젝트만의 색상이나 폰트를 추가하는 방법입니다.</p>
-<pre><code class="language-javascript">/** @type {import('tailwindcss').Config} */
-module.exports = {
-  theme: {
-    extend: {
-      colors: {
-        'brand-primary': '#3b82f6',
-        'brand-dark': '#1e293b',
+<pre><code class="hljs language-javascript"><span class="hljs-comment">/** <span class="hljs-doctag">@type</span> {<span class="hljs-type">import('tailwindcss').Config</span>} */</span>
+<span class="hljs-variable language_">module</span>.<span class="hljs-property">exports</span> = {
+  <span class="hljs-attr">theme</span>: {
+    <span class="hljs-attr">extend</span>: {
+      <span class="hljs-attr">colors</span>: {
+        <span class="hljs-string">'brand-primary'</span>: <span class="hljs-string">'#3b82f6'</span>,
+        <span class="hljs-string">'brand-dark'</span>: <span class="hljs-string">'#1e293b'</span>,
       },
-      spacing: {
-        '128': '32rem',
+      <span class="hljs-attr">spacing</span>: {
+        <span class="hljs-string">'128'</span>: <span class="hljs-string">'32rem'</span>,
       }
     },
   },
-  plugins: [],
+  <span class="hljs-attr">plugins</span>: [],
 }
 </code></pre>
 <hr>
 <h2 id="3-기능-비교표">3. 기능 비교표</h2>
-<p>| 기능 | CSS-in-JS (Emotion/Styled) | Tailwind CSS | 일반 CSS (Module) |
-| :--- | :---: | :---: | :---: |
-| 학습 곡선 | 중간 | 낮음 (클래스 숙지 필요) | 낮음 |
-| 런타임 비용 | 있음 | 없음 | 없음 |
-| 커스텀 자유도 | 높음 | 중간 (설정 필요) | 매우 높음 |</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th align="left">기능</th><th align="center">CSS-in-JS (Emotion/Styled)</th><th align="center">Tailwind CSS</th><th align="center">일반 CSS (Module)</th></tr></thead><tbody><tr><td align="left">학습 곡선</td><td align="center">중간</td><td align="center">낮음 (클래스 숙지 필요)</td><td align="center">낮음</td></tr><tr><td align="left">런타임 비용</td><td align="center">있음</td><td align="center">없음</td><td align="center">없음</td></tr><tr><td align="left">커스텀 자유도</td><td align="center">높음</td><td align="center">중간 (설정 필요)</td><td align="center">매우 높음</td></tr></tbody></table>
 <hr>
 <h2 id="4-할-일-목록-checklist">4. 할 일 목록 (Checklist)</h2>
-<ul>
-<li>[x] Tailwind CSS 설치 및 설정</li>
-<li>[x] 전역 디자인 시스템 정의</li>
-<li>[ ] 반응형 레이아웃 구현 (Breakpoints)</li>
-<li>[ ] 다크 모드 지원 (<code>dark:</code> 클래스 사용)</li>
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" checked disabled> Tailwind CSS 설치 및 설정</li>
+<li class="task-list-item"><input type="checkbox" checked disabled> 전역 디자인 시스템 정의</li>
+<li class="task-list-item"><input type="checkbox" disabled> 반응형 레이아웃 구현 (Breakpoints)</li>
+<li class="task-list-item"><input type="checkbox" disabled> 다크 모드 지원 (<code>dark:</code> 클래스 사용)</li>
 </ul>
 <hr>
 <h2 id="5-유용한-팁">5. 유용한 팁</h2>
@@ -87,10 +114,10 @@ module.exports = {
 <li><strong>임의의 값 사용</strong>: <code>h-[123px]</code> 처럼 대괄호를 사용하여 설정에 없는 값을 즉시 적용할 수 있습니다.</li>
 <li><strong>지시어 사용</strong>: <code>CSS</code> 파일 내에서 <code>@apply</code>를 사용해 반복되는 스타일을 묶을 수 있습니다.</li>
 </ol>
-<pre><code class="language-css">/* globals.css */
-@layer components {
-  .btn-base {
-    @apply px-4 py-2 rounded shadow-md focus:outline-none transition;
+<pre><code class="hljs language-css"><span class="hljs-comment">/* globals.css */</span>
+<span class="hljs-keyword">@layer</span> components {
+  <span class="hljs-selector-class">.btn-base</span> {
+    <span class="hljs-keyword">@apply</span> px-<span class="hljs-number">4</span> py-<span class="hljs-number">2</span> rounded shadow-md <span class="hljs-attribute">focus</span>:outline-none transition;
   }
 }
 </code></pre>
