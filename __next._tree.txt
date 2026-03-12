@@ -1,4 +1,4 @@
-:HL["https://HeoJin1109.github.io/_next/static/chunks/d2bcbccbed08ae7c.css","style"]
+:HL["https://HeoJin1109.github.io/_next/static/chunks/66dc7e2269ba4357.css","style"]
 :HC["https://heojin1109.github.io",""]
 :HL["https://hangeul.pstatic.net/hangeul_static/css/nanum-square-round.css","style"]
-0:{"buildId":"lItunHeCm9AyK7NX7WpYH","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
+0:{"buildId":"Lsim6KOhTZoE14kS-Xaga","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
