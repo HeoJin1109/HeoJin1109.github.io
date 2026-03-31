@@ -2,10 +2,19 @@
 title: "SSG 블로그 제작기 #1"
 date: "2026-02-22"
 category: "project"
-description: "SSG 블로그 제작기 #1에 관한 포스트입니다."
+description: "SSG 블로그 제작기 더미 포스트입니다."
 ---
 
 # SSG 블로그 제작기 #1
 
-Next.js를 사용하여 나만의 정적 블로그를 만드는 프로젝트를 시작합니다.
-Amet minim mollit non deserunt ullamco est sit aliqua dolor.
+Next.js를 사용해 정적 블로그를 구성하는 흐름을 정리한 샘플 글입니다.
+
+## 목표
+
+- 정적 export 유지
+- 마크다운 기반 포스트 작성
+- GitHub Pages 배포
+
+## 진행 메모
+
+레이아웃과 콘텐츠 파이프라인을 먼저 안정화한 뒤, 디자인을 다듬는 순서로 진행합니다.
