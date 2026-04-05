@@ -1,0 +1,393 @@
+1:"$Sreact.fragment"
+7:I[11459,["https://HeoJin1109.github.io/_next/static/chunks/790286d1fbd1ec32.js","https://HeoJin1109.github.io/_next/static/chunks/77d6206a247ee3e4.js"],"default"]
+15:I[97367,["https://HeoJin1109.github.io/_next/static/chunks/ff1a16fafef87110.js","https://HeoJin1109.github.io/_next/static/chunks/d2be314c3ece3fbe.js"],"OutletBoundary"]
+16:"$Sreact.suspense"
+2:T6be3,<h2 id="프로젝트-요약">프로젝트 요약</h2>
+<h3 id="개인-프로젝트-온프레미스-아키텍처-기반-블로그-플랫폼">[개인 프로젝트] 온프레미스 아키텍처 기반 블로그 플랫폼</h3>
+<p><strong>일정</strong>: 2025.04 ~ 2025.11</p>
+<p><strong>기술 스택</strong>: Spring Boot, MySQL, Docker, Nginx, GitHub Actions, Prometheus, Grafana, k6</p>
+<p><strong>소개</strong>: 온프레미스 환경 기반 설계 및 대용량 트래픽 처리 최적화 블로그 플랫폼</p>
+<ul>
+<li><strong>DB 병목 해소</strong>: 실시간 COUNT 쿼리 반정규화 및 배치 정합성 보정 로직 도입 (처리량 4.5배 향상, p95 92.22ms 달성)</li>
+<li><strong>DB 커넥션 고갈 방지</strong>: HikariCP 설정 튜닝으로 고부하 환경에서 실패율 97% 감소, p95 응답 시간 13배 개선</li>
+<li><strong>네트워크 오버헤드 제거</strong>: Nginx-Tomcat 간 upstream keepalive설정으로 반복적인 TCP 연결 수립 비용 절감, Tomcat 활성 스레드 점유율 60% 감소</li>
+<li><strong>OOM 방지용 메모리 최적화</strong>: 게시글 원문 비교 대신 SHA-256 해시 비교 방식 도입으로 메모리 사용량 절감 및 I/O 비용 감소</li>
+<li><strong>CI/CD 파이프라인 최적화</strong>: Docker BuildKit 캐시와 multi-stage 빌드 적용 (빌드/배포 시간 72% 단축, 런타임 이미지 20% 경량화)</li>
+<li><strong>웹 성능 개선</strong>: 이미지 포맷 AVIF 전환으로 용량 85.4% 절감 및 로딩 속도 5배 개선 (132ms -> 26ms)</li>
+<li><strong>외부 접속 환경 개선</strong>: DDNS·Nginx 및 Let’s Encrypt 적용으로 유동 IP 환경의 외부 접속 문제 해결</li>
+</ul>
+<p><strong>관련 링크</strong> | <a href="https://heojin.vercel.app/">블로그 서비스 웹사이트</a> | <a href="https://github.com/Kimheojin/spring-blog-backend.git">블로그 백엔드 GitHub</a></p>
+<hr>
+<h3 id="개인-프로젝트-nosql-기반-레시피-데이터-검색-플랫폼">[개인 프로젝트] NoSQL 기반 레시피 데이터 검색 플랫폼</h3>
+<p><strong>일정</strong>: 2025.09 ~ 2025.12</p>
+<p><strong>기술 스택</strong>: Spring Boot, MongoDB, Caffeine, Redis, Spring Batch, MySQL, MongoDB Atlas Search</p>
+<p><strong>소개</strong>: MongoDB 집계 파이프라인 최적화와 텍스트 인덱싱 전략을 적용한 통합 검색 플랫폼</p>
+<ul>
+<li><strong>검색 응답 속도 개선</strong>: Caffeine, Redis 계층형 캐시 도입으로 검색 자동완성 응답 지연 시간 77% 단축 (856ms → 194ms)</li>
+<li><strong>검색 품질 고도화</strong>: 한글 형태소 처리를 위한 Apache Nori 및 edge_ngram 기반 인덱싱 전략 수립, Aggregation 파이프라인 개선을 통한 한글 검색 정확도 개선</li>
+<li><strong>크롤링 데이터 정제 파이프라인 구축</strong>: 원본 데이터 노이즈 제거를 위한 Spring Batch와 LLM(Gemma3) 연동, No-Offset 조회 및 Batch Prompting 적용</li>
+<li><strong>비로그인 사용자 경험 개선을 위한 식별 구조 설계</strong>: Spring Interceptor와 UUID 쿠키 기반으로 서버 세션 의존성을 제거, 좋아요·북마크 기능 구현</li>
+</ul>
+<p><strong>관련 링크</strong> | <a href="https://recipefinder-hj.vercel.app/">레시피 서비스 웹사이트</a> | <a href="https://github.com/Kimheojin/spring-recipe-backend.git">레시피 백엔드 GitHub</a></p>
+<hr>
+<h3 id="팀-프로젝트-도서-추천-및-공공-도서관-연계-플랫폼-학부-졸업-프로젝트">[팀 프로젝트] 도서 추천 및 공공 도서관 연계 플랫폼 (학부 졸업 프로젝트)</h3>
+<p><strong>일정</strong>: 2024.03 ~ 2024.10</p>
+<p><strong>참여 인원</strong>: 3인 (백엔드 및 데이터 스크래핑 담당)</p>
+<p><strong>기술 스택</strong>: Spring Boot, Spring Security, MySQL, Redis, AWS, Apache JMeter</p>
+<p><strong>소개</strong>: 공공 도서관 실시간 소장 정보 연계 서비스 및 Spring/JPA 캐시 성능 검증 연구 (KSC 2024 논문 게재)</p>
+<ul>
+<li>
+<p><strong>공공 도서관 소장 정보 연계 서비스 개발</strong>: 도서관별 소장 정보를 실시간 수집·가공하여 서비스와 연동하는 데이터 파이프라인 구축</p>
+</li>
+<li>
+<p><strong>캐시 전략 성능 검증 연구 수행</strong>: Spring Data JPA, JPQL, Spring Cache Manager 비교군 설계 및 AOP 기반 SQL 실행 흐름 분석</p>
+</li>
+<li>
+<p><strong>쓰기 처리 최적화 효과 검증</strong>: Write-Behind 및 Batch Insert 기반 튜닝으로 JPQL 대비 처리량 20% 향상 (197.8 → 238.0 req/sec)</p>
+</li>
+<li>
+<p><strong>조회 성능 개선 효과 검증</strong>: Spring Cache Manager 적용 시 DB I/O 및 네트워크 왕복 감소를 통해 처리량 5.7배 향상 (172.2 → 991.1 req/sec)</p>
+</li>
+<li>
+<p><strong>연구 성과</strong>: 프로젝트 코드를 통한 성능 실험 및 분석 결과를 바탕으로 <strong>KSC 2024 논문 게재</strong></p>
+</li>
+</ul>
+<p><strong>관련 링크</strong> | <a href="https://www.riss.kr/search/detail/DetailView.do?p_mat_type=1a0202e37d52c72d&#x26;control_no=cd9dc3cecb211246b7998d826d417196&#x26;keyword=">RISS 학술지 색인</a> | <a href="https://github.com/Kimheojin/spring-checkitout-backend.git">도서 백엔드 GitHub</a></p>
+<hr>
+<h2 id="프로젝트-문제-해결">프로젝트 문제 해결</h2>
+<h3 id="1-역정규화-기반-집계-최적화를-통한-db-병목-해소">1. 역정규화 기반 집계 최적화를 통한 DB 병목 해소</h3>
+<blockquote>
+<p>트래픽 증가에 따라 선형적으로 커지던 COUNT 집계 부하를 줄이기 위해 역정규화 방식을 도입한 과정</p>
+</blockquote>
+<h4 id="전체-아키텍처">전체 아키텍처</h4>
+<p><img src="https://res.cloudinary.com/dtrxriyea/image/upload/v1775371036/portfolio/kjpvrikpatnxjv2fl1g1.avif" alt="이미지"></p>
+<h4 id="문제-상황">문제 상황</h4>
+<h5 id="grafana-대시보드--주요-지표">Grafana 대시보드  주요 지표</h5>
+<p><img src="https://res.cloudinary.com/dtrxriyea/image/upload/v1769076925/load-test/ssvlathwfa6roopwqk0l.avif" alt="이미지 6"></p>
+<h5 id="docker-stats-주요-지표"><code>docker stats</code> 주요 지표</h5>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th align="left">CONTAINER NAME</th><th align="left">CPU (Core)</th><th align="left">MEM USAGE / LIMIT</th><th align="left">MEM %</th></tr></thead><tbody><tr><td align="left">nginx-container</td><td align="left">0.008</td><td align="left">13.38 MiB / 512 MiB</td><td align="left">2.61%</td></tr><tr><td align="left">spring-container</td><td align="left">0.070</td><td align="left">542.4 MiB / 2 GiB</td><td align="left">26.48%</td></tr><tr><td align="left"><strong>mysql-container</strong></td><td align="left"><strong>1.285</strong></td><td align="left"><strong>1.878 GiB / 2 GiB</strong></td><td align="left"><strong>93.91%</strong></td></tr></tbody></table>
+<ul>
+<li>
+<p>cgroup 할당량 (1.25 Core)을 초과하는 CPU Peak 발생 (1.28 Core), 메모리 사용률 94% 도달</p>
+</li>
+<li>
+<p>메인 화면 진입 시 필수적으로 호출되는 카테고리별 <code>COUNT</code> 집계 로직으로 인해, 트래픽 증가에 비례하여 DB Thread 경합 및 자원 고갈 유발</p>
+<ul>
+<li>조회 시점마다 O(N) 집계 연산이 발생해, 트래픽 증가에 따라 DB 부하도 선형적으로 증가</li>
+</ul>
+</li>
+<li>
+<p>집계 결과를 컬럼으로 관리하는 역정규화 방식을 도입해 조회 쿼리 복잡도를 제거하고 DB 부하를 줄임</p>
+<ul>
+<li>대안 검토: 파티셔닝을 통한 인덱스 최적화를 고려했으나, 집계 연산 자체 비용 제거 불가</li>
+<li>조회 성능 개선의 한계로 인해, 정합성 관리 비용을 감수하고 역정규화 방식 채택</li>
+</ul>
+</li>
+</ul>
+<h4 id="개선-내용">개선 내용</h4>
+<ul>
+<li>
+<p><code>Category</code> 테이블 역정규화를 위한 <code>post_count</code> 컬럼 추가,  <code>JOIN</code> 및 <code>COUNT</code> 집계 연산 제거를 통한 조회 성능 최적화</p>
+</li>
+<li>
+<p>업데이트 전략:</p>
+<ul>
+<li>게시글 상태 변화(생성/삭제/이동) 시 카테고리별 <code>post_count</code> 실시간 동기화를 통한 데이터 최신성 유지</li>
+<li>배치 스케줄러를 활용한 주기적 재집계로 실시간 업데이트 시 발생 가능한 정합성 오류 보정 (write 기반 구조로 인한 불일치 대비)</li>
+</ul>
+</li>
+<li>
+<p>Querydsl 벌크 연산을 활용해 DB 부하를 최소화, 포스트의 상태 변화에 따른 카운트 필터링 로직 설계</p>
+</li>
+</ul>
+<h4 id="결과">결과</h4>
+<h5 id="역정규화-적용-후-지표">역정규화 적용 후 지표</h5>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th align="left">CONTAINER NAME</th><th align="left">CPU (Core)</th><th align="left">MEM USAGE / LIMIT</th><th align="left">MEM %</th></tr></thead><tbody><tr><td align="left">nginx-container</td><td align="left">0.0822</td><td align="left">11.33 MiB / 512 MiB</td><td align="left">2.21%</td></tr><tr><td align="left">spring-container</td><td align="left">0.3948</td><td align="left">451.6 MiB / 2 GiB</td><td align="left">22.05%</td></tr><tr><td align="left">mysql-container</td><td align="left">0.2023</td><td align="left">1.515 GiB / 2 GiB</td><td align="left">75.77%</td></tr></tbody></table>
+<ul>
+<li><strong>부하 감소</strong>: CPU 사용량 <strong>84% 절감</strong> (1.28 Core → 0.20 Core) 및 메모리 사용량 <strong>18% 개선</strong></li>
+<li><strong>성능 안정화</strong>: 450 OPS 부하 환경에서 <strong>p95 응답 속도 92.22ms</strong> 유지 및 처리량 안정성 확보</li>
+<li><strong>구조 개선</strong>: 조회 시 COUNT 제거 -  <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mclose">)</span></span></span></span> → <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(1)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord">1</span><span class="mclose">)</span></span></span></span> 조회 구조 전환</li>
+</ul>
+<hr>
+<h3 id="2-connection-pool-병목-해소-및-응답-성능-개선">2. Connection Pool 병목 해소 및 응답 성능 개선</h3>
+<blockquote>
+<p>커넥션 획득 대기로 응답 지연이 누적되던 구조를 해소하기 위해 적정 Connection Pool 산정 기준을 도입한 과정</p>
+</blockquote>
+<h4 id="문제-상황-1">문제 상황</h4>
+<h5 id="grafana-대시보드-주요-지표">Grafana 대시보드 주요 지표</h5>
+<p><img src="https://res.cloudinary.com/dtrxriyea/image/upload/v1775371082/portfolio/ktugozaah98gkjywgfa3.avif" alt="이미지"></p>
+<ul>
+<li>
+<p>500 OPS 고부하 환경에서 최대 175건의 <code>Pending Connection</code> 발생 및 처리량 저하 현상 확인</p>
+</li>
+<li>
+<p>I/O 바운드 작업 비중이 높은 서비스 특성에 비해 커넥션 풀 크기가 작아, 요청량 대비 커넥션 공급이 부족한 상태</p>
+</li>
+<li>
+<p>평균 응답 시간(224 ms) 중 <code>Connection Acquire Wait</code>(180 ms)가 전체 지연의 80% 이상을 점유하는 병목 지점 확인</p>
+</li>
+<li>
+<p>전체 응답 지연의 대부분이 DB 처리 시간이 아닌 커넥션 획득 대기에서 발생하는 구조 확인</p>
+</li>
+</ul>
+<h4 id="개선-내용-1">개선 내용</h4>
+<ul>
+<li>Brian Goetz의 Connection Pool 산정 공식을 기반으로 CPU 코어 수와 I/O 대기 비율을 반영한 최적 풀 사이즈 산정 기준 적용</li>
+<li>공식 : <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mi>o</mi><mi>o</mi><mi>l</mi><mi>S</mi><mi>i</mi><mi>z</mi><mi>e</mi><mo>=</mo><msub><mi>N</mi><mrow><mi>c</mi><mi>p</mi><mi>u</mi></mrow></msub><mo>×</mo><mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mfrac><mi>W</mi><mi>S</mi></mfrac><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">Pool Size = N_{cpu} \times (1 + \frac{W}{S})</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="mord mathnormal">oo</span><span class="mord mathnormal" style="margin-right:0.01968em;">l</span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mord mathnormal">i</span><span class="mord mathnormal" style="margin-right:0.04398em;">z</span><span class="mord mathnormal">e</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.9694em;vertical-align:-0.2861em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.10903em;">N</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:-0.109em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">c</span><span class="mord mathnormal mtight">p</span><span class="mord mathnormal mtight">u</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">1</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1.2173em;vertical-align:-0.345em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8723em;"><span style="top:-2.655em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.05764em;">S</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.13889em;">W</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mclose">)</span></span></span></span></li>
+</ul>
+<p><img src="https://res.cloudinary.com/dtrxriyea/image/upload/v1775371116/portfolio/fpbkwskngcrnygtpfprp.avif" alt="이미지"></p>
+<ul>
+<li>
+<p>모니터링 지표 기반 변수 산출:</p>
+<ul>
+<li><strong>Wait Time (W)</strong>: 210 ms (Grafana 및 모니터링 지표 기반 측정값: <code>Acquire Wait</code> 180 ms + DB I/O 대기 약 30 ms)</li>
+<li><strong>Service Time (S)</strong>: 14 ms (비즈니스 로직 수행 시간 기준 측정)</li>
+</ul>
+</li>
+<li>
+<p>산출 결과(약 20)을 기준으로 <code>maximumPoolSize</code>를 기본값 10에서 상향 조정 (과도한 커넥션 증가로 인한 Context Switching 및 DB 부하 증가 방지)</p>
+</li>
+</ul>
+<h4 id="결과-1">결과</h4>
+<ul>
+<li><strong>응답 속도 개선</strong>: p95 응답 시간 <strong>1,145 ms → 87.66 ms (약 13배 단축)</strong></li>
+<li><strong>시스템 안정성</strong>: 요청 누락 건수 <strong>5,250건 → 146건 (97% 감소)</strong></li>
+<li><strong>인프라 효율화</strong>: 동일 처리량 기준 필요 가상 사용자(VU) 45% 절감 (300 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>→</mo></mrow><annotation encoding="application/x-tex">\to</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.3669em;"></span><span class="mrel">→</span></span></span></span> 164)으로 시스템 자원 가동 효율 최적화</li>
+<li><strong>구조 개선</strong>: Connection Pool 부족 상태 → 요청 대비 적정 커넥션 공급 상태로 전환</li>
+<li><strong>병목 해소</strong>: <code>Connection Acquire Wait</code> 비중 감소로 응답 지연 주요 원인 제거</li>
+</ul>
+<hr>
+<h3 id="3-다계층-캐시-도입을-통한-검색-자동완성-응답-속도-개선">3. 다계층 캐시 도입을 통한 검색 자동완성 응답 속도 개선</h3>
+<blockquote>
+<p>반복 검색 연산으로 자동완성 응답이 저하되던 구조를 개선하기 위해 Caffeine·Redis 기반 다계층 캐시를 도입한 과정</p>
+</blockquote>
+<h4 id="전체-아키텍처-1">전체 아키텍처</h4>
+<p><img src="https://res.cloudinary.com/dtrxriyea/image/upload/v1775371144/portfolio/tsfbornegp1i6s5caimn.avif" alt="이미지"></p>
+<h4 id="문제-상황-2">문제 상황</h4>
+<ul>
+<li>
+<p>자동완성 특성상 동일/유사 키워드에 대한 반복 요청이 발생하며, 매 요청마다 고비용 검색 연산 수행</p>
+</li>
+<li>
+<p>MongoDB Atlas Search 기반 연산이 요청마다 수행되어 트래픽 증가 시 비용 증가 및 병목 발생 구조</p>
+<ul>
+<li>동일 결과에 대해 반복적으로 DB 연산이 발생하는 비효율 구조</li>
+</ul>
+</li>
+<li>
+<p>기존 DB 직접 조회 방식 사용 시 평균 응답 속도 856 ms 기록 및 UX 저해 확인</p>
+</li>
+</ul>
+<h4 id="개선-내용-2">개선 내용</h4>
+<ul>
+<li>
+<p>Cache-Aside 패턴을 기반으로 로컬 캐시(Caffeine)와 글로벌 캐시(Redis) 구조를 설계</p>
+</li>
+<li>
+<p>단일 캐시로는 네트워크 비용 또는 데이터 공유 문제를 동시에 해결하기 어려워 다계층 캐시 구조 채택</p>
+</li>
+<li>
+<p>Local Cache (Caffeine)</p>
+<ul>
+<li>애플리케이션 메모리 내 직접 참조를 통한 네트워크 RTT 제거 및 저지연 응답 처리</li>
+<li>데이터 연산 비용 최소화 및 즉각적인 응답 속도 확보</li>
+</ul>
+</li>
+<li>
+<p>Global Cache (Redis)</p>
+<ul>
+<li>분산 환경에서 데이터 공유를 위한 캐시 계층으로 DB 조회 분산 및 캐시 히트율 확보</li>
+<li>MongoDB Atlas Search의 검색 연산 부하 분산</li>
+</ul>
+</li>
+<li>
+<p>캐시 정책: 데이터 신선도 유지를 위한 L1(Caffeine, 1m) 캐시와 적중률 향상을 위한 L2(Redis, 10m) 캐시의 다중 계층화로 검색 시스템 성능 최적화</p>
+</li>
+</ul>
+<h4 id="결과-2">결과</h4>
+<ul>
+<li><strong>성능 향상</strong>: 평균 응답 속도 약 77% 개선 (856 ms <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>→</mo></mrow><annotation encoding="application/x-tex">\to</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.3669em;"></span><span class="mrel">→</span></span></span></span> 194 ms)</li>
+<li><strong>단계적 개선</strong>:
+<ul>
+<li>
+<p>글로벌 캐시 적용 시: DB 직접 조회 대비 응답 속도 49.8% 개선 (검색 연산 부하 분산)</p>
+</li>
+<li>
+<p>로컬 캐시 추가 적용: Redis 조회 대비 네트워크 RTT 제거로 추가 성능 향상</p>
+</li>
+</ul>
+</li>
+<li><strong>인프라 효율화</strong>: 고비용 검색 연산의 캐싱 처리를 통해 DB 서버 가용성 확보 및 연산 부하 분산</li>
+<li>조회 흐름을 DB 직접 조회 방식에서 Redis와 Caffeine을 거치는 다계층 캐시 구조로 전환</li>
+<li>중복 검색 연산 제거를 통해 DB 부하 감소 및 검색 처리 비용 절감</li>
+</ul>
+<hr>
+<h3 id="4-no-offset-적재와-llm-기반-데이터-정제를-통한-대용량-데이터-처리-최적화">4. No-Offset 적재와 LLM 기반 데이터 정제를 통한 대용량 데이터 처리 최적화</h3>
+<blockquote>
+<p>대용량 배치 처리의 재시작 한계와 비정형 데이터 정제 비용 문제를 해결하기 위해 No-offset 기반 적재와 LLM 배치 처리 방식을 도입한 과정</p>
+</blockquote>
+<h4 id="전체-아키텍처-2">전체 아키텍처</h4>
+<p><img src="https://res.cloudinary.com/dtrxriyea/image/upload/v1775371175/portfolio/l6l4ke34ny4gsebf87jl.avif" alt="이미지"></p>
+<h4 id="4-1-no-offset-기반-mongodb-대용량-배치-처리">4-1. No-offset 기반 MongoDB 대용량 배치 처리</h4>
+<h5 id="문제-상황-3">문제 상황</h5>
+<ul>
+<li>MongoDB 커서 기반 스트리밍 방식 적용 시, 배치 장애 발생 지점 기록 및 재시작 처리에 한계가 존재</li>
+<li>일반적인 페이징 방식에서는 페이지가 깊어질수록 Skip 연산으로 인해 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mclose">)</span></span></span></span> 스캔 비용이 발생</li>
+</ul>
+<h5 id="개선-내용-3">개선 내용</h5>
+<ul>
+<li>
+<p>Spring Batch <code>ExecutionContext</code>에 마지막 처리 ID를 저장하는 No-offset 기반 <code>MongoPagingItemReader</code> 구현</p>
+</li>
+<li>
+<p><code>ItemStream</code> 구현을 통해 인덱스 기반의 포인터 상태를 직접 관리하도록 설계</p>
+</li>
+</ul>
+<h5 id="결과-3">결과</h5>
+<ul>
+<li><strong>성능 일관성 확보</strong>: 페이징 오버헤드를 제거하여 데이터 양에 관계없이 일정한 쿼리 성능을 유지</li>
+<li><strong>운영 안정성 구축</strong>: 장애 시 메타데이터를 활용하여 중단 지점부터 즉시 재개 가능한 환경을 마련</li>
+</ul>
+<hr>
+<h4 id="4-2-llm-기반-비정형-데이터-구조화-및-배치-처리-최적화">4-2. LLM 기반 비정형 데이터 구조화 및 배치 처리 최적화</h4>
+<h5 id="문제-상황-4">문제 상황</h5>
+<ul>
+<li>비정형 크롤링 데이터는 노이즈가 많아, 정규표현식 기반 전처리만으로는 정제 정확도와 확장성을 확보하는 데 한계가 존재</li>
+<li>수천 건의 데이터를 데이터별로 개별 LLM API 호출 방식으로 처리하면, 과도한 RTT와 누적 호출 비용으로 인해 성능 및 비용 병목이 발생</li>
+</ul>
+<h5 id="개선-내용-4">개선 내용</h5>
+<ul>
+<li><strong>Batch Prompting 최적화</strong>: 단일 요청에 데이터를 N건씩 묶어 처리하여 API 호출 횟수를 축소하고 네트워크 RTT 오버헤드 극복</li>
+<li>LLM 반환 JSON 텍스트 정제 및 <code>ObjectMapper</code>를 활용한 자바 객체 역직렬화 적용</li>
+<li><strong>장애 격리 처리</strong>: 일부 데이터 처리 실패 시 전체 배치가 중단되지 않도록, 실패 데이터를 별도 DB에 저장해 분리 관리하도록 구현</li>
+</ul>
+<h5 id="결과-4">결과</h5>
+<ul>
+<li>
+<p><strong>비용 및 속도 최적화</strong>: 1:1 API 호출 대비 네트워크 비용을 50% 절감하고 전체 배치 지연 시간을 단축</p>
+</li>
+<li>
+<p><strong>데이터 품질 확보</strong>: 불필요한 노이즈를 제거하여 서비스에 즉시 활용할 수 있는 정형 데이터셋을 구축</p>
+</li>
+</ul>
+<hr>
+<h3 id="5-ksc-2024-논문-게재-및-발표---jpa-1차-캐시-성능의-정량적-검증">5. KSC 2024 논문 게재 및 발표 - JPA 1차 캐시 성능의 정량적 검증</h3>
+<blockquote>
+<p>실서비스 관점에서 1차 캐시의 실효성을 확인하기 위해 비교 실험을 수행하고 성능을 정량 분석한 과정</p>
+</blockquote>
+<h4 id="실험-배경">실험 배경</h4>
+<ul>
+<li>단일 요청 내 동일 식별자 중복 조회가 드문 실제 서비스 환경에서 1차 캐시의 실효성 의문 발생</li>
+<li>특정 시나리오를 구성해 캐시 히트율을 유도하고 성능 이점을 정량적으로 분석</li>
+</ul>
+<h4 id="5-1-쓰기insert-로직-부하-상황-성능-비교">5-1. 쓰기(Insert) 로직 부하 상황 성능 비교</h4>
+<h5 id="전체-아키텍처-3">전체 아키텍처</h5>
+<p><img src="https://res.cloudinary.com/dtrxriyea/image/upload/v1775371206/portfolio/ufgwwsu1xrbyl9wsyukj.avif" alt="이미지"></p>
+<h5 id="비교-실험-구성">비교 실험 구성</h5>
+<ul>
+<li><strong>Data JPA</strong>: 1차 캐시 기반 내부 배치 처리 및 쓰기 지연 로직 적용</li>
+<li><strong>JPQL</strong>: 영속성 컨텍스트 우회 및 즉시 쿼리 실행 방식으로 구성하여 대조</li>
+</ul>
+<h5 id="결과-5">결과</h5>
+<ul>
+<li>
+<p><strong>처리량 향상</strong>: Data JPA(238.0 TPS)가 JPQL(197.8 TPS) 대비 약 20% 높은 처리량 기록</p>
+</li>
+<li>
+<p><strong>원인 분석</strong>: 쓰기 지연을 통한 DB 네트워크 RTT 감소가 성능 향상의 핵심 요인</p>
+</li>
+</ul>
+<hr>
+<h4 id="5-2-조회select-로직-부하-상황-성능-비교">5-2. 조회(Select) 로직 부하 상황 성능 비교</h4>
+<h5 id="전체-아키텍처-4">전체 아키텍처</h5>
+<p><img src="https://res.cloudinary.com/dtrxriyea/image/upload/v1775371234/portfolio/petd48su0woc5uhbbgtw.avif" alt="이미지"></p>
+<h5 id="비교-실험-구성-1">비교 실험 구성</h5>
+<ul>
+<li><strong>Data JPA (1차 캐시)</strong>: 트랜잭션 범위 내 동일 식별자 반복 조회 조건 구성</li>
+<li><strong>Spring Cache (로컬 캐시)</strong>: <code>ConcurrentMapCacheManager</code>를 통한 애플리케이션 레벨 캐싱 대조군 설정</li>
+</ul>
+<h5 id="결과-6">결과</h5>
+<ul>
+<li>
+<p><strong>성능 비교</strong>: Spring Cache(991.1 TPS)가 1차 캐시(172.2 TPS) 대비 약 5.7배 높은 처리량 달성</p>
+</li>
+<li>
+<p><strong>원인 분석</strong>: 1차 캐시는 트랜잭션 종료 시 소멸하여 매 요청마다 DB RTT가 발생하나, 로컬 캐시는 메모리 즉시 참조로 네트워크 오버헤드를 근본적으로 제거</p>
+</li>
+</ul>0:{"buildId":"AkcC2PHv1o3oxJfFYFxIV","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"xl:grid xl:w-[calc(100%+19rem)] xl:grid-cols-[minmax(0,1fr)_16rem] xl:items-start xl:gap-12","children":[["$","div",null,{"className":"w-full min-w-0","children":["$","div",null,{"children":[["$","header",null,{"className":"mb-12","children":[["$","h1",null,{"className":"text-4xl font-bold mb-4 tracking-tight","children":"Portfolio"}],["$","time",null,{"className":"text-sm text-muted-foreground","children":["Last updated: ","2026-04-05"]}]]}],["$","div",null,{"className":"prose dark:prose-invert max-w-none prose-headings:scroll-mt-32","dangerouslySetInnerHTML":{"__html":"$2"}}],"$L3"]}]}],"$L4"]}],["$L5"],"$L6"]}],"loading":null,"isPartial":false}
+3:["$","$L7",null,{}]
+4:["$","div",null,{"className":"hidden xl:block xl:w-64","children":["$","div",null,{"className":"xl:fixed xl:top-24 xl:w-64","style":{"right":"max(1.5rem, calc((100vw - 56rem) / 2 - 19rem))"},"children":["$","aside",null,{"className":"w-64","children":["$","div",null,{"className":"flex max-h-[calc(100vh-8rem)] flex-col","children":[["$","h2",null,{"className":"mb-6 text-[11px] font-bold uppercase tracking-[0.2em] text-muted-foreground opacity-50","children":"On this page"}],["$","nav",null,{"className":"flex flex-col space-y-4 overflow-y-auto pr-3","children":[["$","a","프로젝트-요약",{"href":"#프로젝트-요약","className":"block text-[13px] leading-snug transition-all duration-200 hover:translate-x-1 hover:text-heading text-muted font-bold","children":"프로젝트 요약"}],["$","a","개인-프로젝트-온프레미스-아키텍처-기반-블로그-플랫폼",{"href":"#개인-프로젝트-온프레미스-아키텍처-기반-블로그-플랫폼","className":"block text-[13px] leading-snug transition-all duration-200 hover:translate-x-1 hover:text-heading pl-4 text-muted-foreground font-medium","children":"[개인 프로젝트] 온프레미스 아키텍처 기반 블로그 플랫폼"}],["$","a","개인-프로젝트-nosql-기반-레시피-데이터-검색-플랫폼",{"href":"#개인-프로젝트-nosql-기반-레시피-데이터-검색-플랫폼","className":"block text-[13px] leading-snug transition-all duration-200 hover:translate-x-1 hover:text-heading pl-4 text-muted-foreground font-medium","children":"[개인 프로젝트] NoSQL 기반 레시피 데이터 검색 플랫폼"}],["$","a","팀-프로젝트-도서-추천-및-공공-도서관-연계-플랫폼-학부-졸업-프로젝트",{"href":"#팀-프로젝트-도서-추천-및-공공-도서관-연계-플랫폼-학부-졸업-프로젝트","className":"block text-[13px] leading-snug transition-all duration-200 hover:translate-x-1 hover:text-heading pl-4 text-muted-foreground font-medium","children":"[팀 프로젝트] 도서 추천 및 공공 도서관 연계 플랫폼 (학부 졸업 프로젝트)"}],["$","a","프로젝트-문제-해결",{"href":"#프로젝트-문제-해결","className":"block text-[13px] leading-snug transition-all duration-200 hover:translate-x-1 hover:text-heading text-muted font-bold","children":"프로젝트 문제 해결"}],["$","a","1-역정규화-기반-집계-최적화를-통한-db-병목-해소",{"href":"#1-역정규화-기반-집계-최적화를-통한-db-병목-해소","className":"block text-[13px] leading-snug transition-all duration-200 hover:translate-x-1 hover:text-heading pl-4 text-muted-foreground font-medium","children":"1. 역정규화 기반 집계 최적화를 통한 DB 병목 해소"}],["$","a","전체-아키텍처",{"href":"#전체-아키텍처","className":"block text-[13px] leading-snug transition-all duration-200 hover:translate-x-1 hover:text-heading pl-8 text-muted-foreground/80 font-normal","children":"전체 아키텍처"}],["$","a","문제-상황",{"href":"#문제-상황","className":"block text-[13px] leading-snug transition-all duration-200 hover:translate-x-1 hover:text-heading pl-8 text-muted-foreground/80 font-normal","children":"문제 상황"}],["$","a","개선-내용",{"href":"#개선-내용","className":"block text-[13px] leading-snug transition-all duration-200 hover:translate-x-1 hover:text-heading pl-8 text-muted-foreground/80 font-normal","children":"개선 내용"}],["$","a","결과",{"href":"#결과","className":"block text-[13px] leading-snug transition-all duration-200 hover:translate-x-1 hover:text-heading pl-8 text-muted-foreground/80 font-normal","children":"결과"}],["$","a","2-connection-pool-병목-해소-및-응답-성능-개선",{"href":"#2-connection-pool-병목-해소-및-응답-성능-개선","className":"block text-[13px] leading-snug transition-all duration-200 hover:translate-x-1 hover:text-heading pl-4 text-muted-foreground font-medium","children":"2. Connection Pool 병목 해소 및 응답 성능 개선"}],["$","a","문제-상황-1",{"href":"#문제-상황-1","className":"block text-[13px] leading-snug transition-all duration-200 hover:translate-x-1 hover:text-heading pl-8 text-muted-foreground/80 font-normal","children":"문제 상황"}],["$","a","개선-내용-1",{"href":"#개선-내용-1","className":"block text-[13px] leading-snug transition-all duration-200 hover:translate-x-1 hover:text-heading pl-8 text-muted-foreground/80 font-normal","children":"개선 내용"}],["$","a","결과-1",{"href":"#결과-1","className":"block text-[13px] leading-snug transition-all duration-200 hover:translate-x-1 hover:text-heading pl-8 text-muted-foreground/80 font-normal","children":"결과"}],"$L8","$L9","$La","$Lb","$Lc","$Ld","$Le","$Lf","$L10","$L11","$L12","$L13","$L14"]}]]}]}]}]}]
+5:["$","script","script-0",{"src":"https://HeoJin1109.github.io/_next/static/chunks/77d6206a247ee3e4.js","async":true}]
+6:["$","$L15",null,{"children":["$","$16",null,{"name":"Next.MetadataOutlet","children":"$@17"}]}]
+8:["$","a","3-다계층-캐시-도입을-통한-검색-자동완성-응답-속도-개선",{"href":"#3-다계층-캐시-도입을-통한-검색-자동완성-응답-속도-개선","className":"block text-[13px] leading-snug transition-all duration-200 hover:translate-x-1 hover:text-heading pl-4 text-muted-foreground font-medium","children":"3. 다계층 캐시 도입을 통한 검색 자동완성 응답 속도 개선"}]
+9:["$","a","전체-아키텍처-1",{"href":"#전체-아키텍처-1","className":"block text-[13px] leading-snug transition-all duration-200 hover:translate-x-1 hover:text-heading pl-8 text-muted-foreground/80 font-normal","children":"전체 아키텍처"}]
+a:["$","a","문제-상황-2",{"href":"#문제-상황-2","className":"block text-[13px] leading-snug transition-all duration-200 hover:translate-x-1 hover:text-heading pl-8 text-muted-foreground/80 font-normal","children":"문제 상황"}]
+b:["$","a","개선-내용-2",{"href":"#개선-내용-2","className":"block text-[13px] leading-snug transition-all duration-200 hover:translate-x-1 hover:text-heading pl-8 text-muted-foreground/80 font-normal","children":"개선 내용"}]
+c:["$","a","결과-2",{"href":"#결과-2","className":"block text-[13px] leading-snug transition-all duration-200 hover:translate-x-1 hover:text-heading pl-8 text-muted-foreground/80 font-normal","children":"결과"}]
+d:["$","a","4-no-offset-적재와-llm-기반-데이터-정제를-통한-대용량-데이터-처리-최적화",{"href":"#4-no-offset-적재와-llm-기반-데이터-정제를-통한-대용량-데이터-처리-최적화","className":"block text-[13px] leading-snug transition-all duration-200 hover:translate-x-1 hover:text-heading pl-4 text-muted-foreground font-medium","children":"4. No-Offset 적재와 LLM 기반 데이터 정제를 통한 대용량 데이터 처리 최적화"}]
+e:["$","a","전체-아키텍처-2",{"href":"#전체-아키텍처-2","className":"block text-[13px] leading-snug transition-all duration-200 hover:translate-x-1 hover:text-heading pl-8 text-muted-foreground/80 font-normal","children":"전체 아키텍처"}]
+f:["$","a","4-1-no-offset-기반-mongodb-대용량-배치-처리",{"href":"#4-1-no-offset-기반-mongodb-대용량-배치-처리","className":"block text-[13px] leading-snug transition-all duration-200 hover:translate-x-1 hover:text-heading pl-8 text-muted-foreground/80 font-normal","children":"4-1. No-offset 기반 MongoDB 대용량 배치 처리"}]
+10:["$","a","4-2-llm-기반-비정형-데이터-구조화-및-배치-처리-최적화",{"href":"#4-2-llm-기반-비정형-데이터-구조화-및-배치-처리-최적화","className":"block text-[13px] leading-snug transition-all duration-200 hover:translate-x-1 hover:text-heading pl-8 text-muted-foreground/80 font-normal","children":"4-2. LLM 기반 비정형 데이터 구조화 및 배치 처리 최적화"}]
+11:["$","a","5-ksc-2024-논문-게재-및-발표---jpa-1차-캐시-성능의-정량적-검증",{"href":"#5-ksc-2024-논문-게재-및-발표---jpa-1차-캐시-성능의-정량적-검증","className":"block text-[13px] leading-snug transition-all duration-200 hover:translate-x-1 hover:text-heading pl-4 text-muted-foreground font-medium","children":"5. KSC 2024 논문 게재 및 발표 - JPA 1차 캐시 성능의 정량적 검증"}]
+12:["$","a","실험-배경",{"href":"#실험-배경","className":"block text-[13px] leading-snug transition-all duration-200 hover:translate-x-1 hover:text-heading pl-8 text-muted-foreground/80 font-normal","children":"실험 배경"}]
+13:["$","a","5-1-쓰기insert-로직-부하-상황-성능-비교",{"href":"#5-1-쓰기insert-로직-부하-상황-성능-비교","className":"block text-[13px] leading-snug transition-all duration-200 hover:translate-x-1 hover:text-heading pl-8 text-muted-foreground/80 font-normal","children":"5-1. 쓰기(Insert) 로직 부하 상황 성능 비교"}]
+14:["$","a","5-2-조회select-로직-부하-상황-성능-비교",{"href":"#5-2-조회select-로직-부하-상황-성능-비교","className":"block text-[13px] leading-snug transition-all duration-200 hover:translate-x-1 hover:text-heading pl-8 text-muted-foreground/80 font-normal","children":"5-2. 조회(Select) 로직 부하 상황 성능 비교"}]
+17:null

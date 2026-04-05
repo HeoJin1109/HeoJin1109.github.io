@@ -1,3 +1,3 @@
-:HL["https://HeoJin1109.github.io/_next/static/chunks/ae4a845b60c791cd.css","style"]
+:HL["https://HeoJin1109.github.io/_next/static/chunks/ce0937a8af0f0bd4.css","style"]
 :HL["https://hangeul.pstatic.net/hangeul_static/css/nanum-square-round.css","style"]
-0:{"buildId":"uMyNqsSwiCVcOclGpsMYR","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"/_not-found","paramType":null,"paramKey":"/_not-found","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
+0:{"buildId":"AkcC2PHv1o3oxJfFYFxIV","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"/_not-found","paramType":null,"paramKey":"/_not-found","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
