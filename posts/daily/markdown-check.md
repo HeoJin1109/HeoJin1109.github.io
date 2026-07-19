@@ -5,8 +5,12 @@ category: "daily"
 description: "마크다운 요소 렌더링을 확인하기 위한 더미 포스트입니다."
 ---
 
+# 크기 체그
 ## 마크다운 문법 체크
 
+### 123
+
+#### ㅁㄴㅇㄹ
 **굵게**, *기울임*, `인라인 코드`를 함께 확인합니다.
 
 ### 리스트
@@ -30,3 +34,35 @@ description: "마크다운 요소 렌더링을 확인하기 위한 더미 포스
 블록 수식:
 
 $$\frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$$
+
+```java
+  
+hello 
+
+class heell(
+    asdf
+)
+```
+
+### 코드블럭 디자인 체크
+
+```ts
+function greet(name: string) {
+  return `hello, ${name}`;
+}
+
+greet("world");
+```
+
+```bash
+npm install
+npm run dev
+```
+
+```json
+{
+  "name": "ssg-blog",
+  "private": true
+}
+```
+
