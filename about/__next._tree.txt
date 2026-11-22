@@ -1,6 +1,6 @@
-:HL["https://HeoJin1109.github.io/_next/static/chunks/3u5pt220rdjbu.css","style"]
+:HL["https://HeoJin1109.github.io/_next/static/chunks/1anqq48my_b1q.css","style"]
 :HC["https://heojin1109.github.io",""]
 :HL["https://hangeul.pstatic.net/hangeul_static/css/nanum-square-round.css","style"]
 2:[["children",{"s":"__PAGE__","h":160}]]
 1:[["children",{"s":"about","h":96,"c":"$Q2"}]]
-0:{"b":"FZ3JHPin_7njmQvnjpwH9","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
+0:{"b":"_ToeFMq8z5K_DuZaFHJGN","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
